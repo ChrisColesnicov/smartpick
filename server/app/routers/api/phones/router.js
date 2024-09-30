@@ -2,8 +2,9 @@ const express = require("express");
 
 const router = express.Router();
 
-const { browse } = require("../../../controllers/phoneActions");
+const { browse, read } = require("../../../controllers/phoneActions");
 
 router.get("/", browse);
+router.get("/:id", read);
 
 module.exports = router;
