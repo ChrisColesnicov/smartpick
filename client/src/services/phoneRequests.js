@@ -1,22 +1,13 @@
-import axios from "axios";
+import myAxios from "./myAxios";
 
-export default function getPhones() {
-  return axios
-    .get(`${import.meta.env.VITE_API_URL}/api/phones`)
-    .then((response) => console.info(response))
-    .catch((error) => {
-      console.error(error);
-    });
+export default async function getPhones() {
+  try {
+    const response = await myAxios.get(
+      `${import.meta.env.VITE_API_URL}/api/phones`
+    );
+    return response.data;
+  } catch (error) {
+    console.error(error);
+    return [];
+  }
 }
-
-/* export function getMovies() {
-    return axios
-      .get(`${import.meta.env.VITE_API_URL}/api/movies`, {
-        withCredentials: true,
-      })
-      .then((response) => response.data)
-      .catch((error) => {
-        console.error(error);
-        return [];
-      });
-  } */
