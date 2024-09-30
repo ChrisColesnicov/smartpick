@@ -7,8 +7,10 @@ const router = express.Router();
 /* ************************************************************************* */
 
 const itemsRouter = require("./items/router");
+const phonesRouter = require("./phones/router");
 
 router.use("/items", itemsRouter);
+router.use("/phones", phonesRouter);
 
 /* ************************************************************************* */
 
