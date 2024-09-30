@@ -1,5 +1,12 @@
 // Import the repository modules responsible for handling data operations on the tables
-const ItemRepository = require("./models/ItemRepository");
+const PhoneRepository = require("./models/PhoneRepository");
+const BrandRepository = require("./models/BrandRepository");
+const WifiRepository = require("./models/WifiRepository");
+const OsRepository = require("./models/OsRepository");
+const BluetoothRepository = require("./models/BluetoothRepository");
+const CoverRepository = require("./models/CoverRepository");
+const ConnectivityRepository = require("./models/ConnectivityRepository");
+const ScreenRepository = require("./models/ScreenRepository");
 
 // Create an empty object to hold data repositories for different tables
 const tables = {};
@@ -9,7 +16,14 @@ const tables = {};
 /* ************************************************************************* */
 
 // Register each repository as data access point for its table
-tables.item = new ItemRepository();
+tables.phone = new PhoneRepository();
+tables.brand = new BrandRepository();
+tables.wifi = new WifiRepository();
+tables.os = new OsRepository();
+tables.bluetooth = new BluetoothRepository();
+tables.cover = new CoverRepository();
+tables.connectivity = new ConnectivityRepository();
+tables.screen = new ScreenRepository();
 
 /* ************************************************************************* */
 
