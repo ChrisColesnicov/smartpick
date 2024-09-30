@@ -4,4 +4,19 @@
   margin: 0;
   text-decoration: none;
   list-style: none;
+  color: black;
+}
+
+:root {
+  --main-white: #fefcf4;
+  --main-black: #090909;
+  --light-green: #cbf3f0;
+  --main-green: #2ec4b6;
+  --main-orange: #ff9f1c;
+  --main-yellow: #ffbf69;
+  --light-yellow: #ffdeb1;
+  --dark-font: #2d3433;
+  --main-font-size: 16px;
+  --reduced-font-size: 14px;
+  --bigger-font-size: 20px;
 }
