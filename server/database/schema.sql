@@ -238,7 +238,7 @@ INSERT INTO
         admin_id
     )
 VALUES (
-        "https://m.media-amazon.com/images/I/71vKy5OHuPL.jpg",
+        "https://boulanger.scene7.com/is/image/Boulanger/0195949036248_h_f_l_0?hei=304&resMode=sharp2&op_usm=1.75,0.3,2,0",
         1,
         "iPhone 15",
         "A16 Bionic",
@@ -278,7 +278,7 @@ VALUES (
         1
     ),
     (
-        "https://m.media-amazon.com/images/I/81T6O1HD3XL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/51AJymISsfL._AC_SX679_.jpg",
         2,
         "Galaxy S23 Ultra",
         "Snapdragon 8 Gen 2",
@@ -318,7 +318,7 @@ VALUES (
         1
     ),
     (
-        "https://m.media-amazon.com/images/I/71ZOtNdaZCL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/71LB16AzO9L._AC_UF1000,1000_QL80_.jpg",
         3,
         "Pixel 8 Pro",
         "Google Tensor G3",
@@ -358,7 +358,7 @@ VALUES (
         1
     ),
     (
-        "https://m.media-amazon.com/images/I/81gepf1eMqL._AC_SL1500_.jpg",
+        "https://thumb.pccomponentes.com/w-530-530/articles/1074/10747142/165-xiaomi-13-pro-12-256gb-blanco-libre.jpg",
         4,
         "13 Pro",
         "Snapdragon 8 Gen 2",
@@ -398,7 +398,7 @@ VALUES (
         1
     ),
     (
-        "https://m.media-amazon.com/images/I/81IgN2ee1sL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/71x5ntU43-L._AC_UF894,1000_QL80_.jpg",
         5,
         "Phone 2",
         "Snapdragon 8+ Gen 1",
@@ -438,7 +438,7 @@ VALUES (
         1
     ),
     (
-        "https://m.media-amazon.com/images/I/71jxfm8i2+L._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/51S0oioV3sL._AC_UF1000,1000_QL80_.jpg",
         6,
         "11",
         "Snapdragon 8 Gen 2",
@@ -478,7 +478,7 @@ VALUES (
         1
     ),
     (
-        "https://m.media-amazon.com/images/I/71zMVOYYlLL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/51F7uPMDx9L._AC_UF1000,1000_QL80_.jpg",
         7,
         "F5 Pro",
         "Snapdragon 8+ Gen 1",
@@ -518,7 +518,7 @@ VALUES (
         1
     ),
     (
-        "https://m.media-amazon.com/images/I/71iljb9Qb+L._AC_SL1500_.jpg",
+        "https://www.honor.com/content/dam/honor/fr/product-list/smartphone/honor-magic5-pro/hono-magic5-pro-green.png",
         8,
         "Magic 5 Pro",
         "Snapdragon 8 Gen 2",
@@ -558,7 +558,7 @@ VALUES (
         1
     ),
     (
-        "https://m.media-amazon.com/images/I/71T2zZZW6gL._AC_SL1500_.jpg",
+        "https://fr.etoren.com/upload/images/0.46503000_1679904945_oppo-find-x6-pro-5g-pgem10-dual-sim-512gb-brown-16gb-ram-china-version.jpg",
         9,
         "Find X6 Pro",
         "Snapdragon 8 Gen 2",
@@ -598,7 +598,7 @@ VALUES (
         1
     ),
     (
-        "https://m.media-amazon.com/images/I/81r8HKgVo9L._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/41VpavAnNzL.jpg",
         10,
         "Xperia 1 V",
         "Snapdragon 8 Gen 2",
@@ -638,7 +638,7 @@ VALUES (
         1
     ),
     (
-        "https://m.media-amazon.com/images/I/81ezSSCeAhL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/71OrHG2J6FL.jpg",
         11,
         "Mate 50 Pro",
         "Snapdragon 8+ Gen 1",
@@ -678,7 +678,7 @@ VALUES (
         1
     ),
     (
-        "https://m.media-amazon.com/images/I/71zCufF5QXL._AC_SL1500_.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUCRsqW4UWGktawjPtAQ8sFzzyVGMhpzEAMQ&s",
         12,
         "X90 Pro+",
         "Snapdragon 8 Gen 2",
@@ -718,7 +718,7 @@ VALUES (
         1
     ),
     (
-        "https://m.media-amazon.com/images/I/71S9dis6PrL._AC_SL1500_.jpg",
+        "https://www.powerplanetonline.com/cdnassets/realme_gt3_blanco_01_l.jpg",
         13,
         "GT 3",
         "Snapdragon 8+ Gen 1",
@@ -758,7 +758,7 @@ VALUES (
         1
     ),
     (
-        "https://m.media-amazon.com/images/I/71gl-XNVA7L._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/71QxNLtyhcL._AC_UF1000,1000_QL80_.jpg",
         14,
         "G60 5G",
         "Snapdragon 695",
@@ -798,7 +798,7 @@ VALUES (
         1
     ),
     (
-        "https://m.media-amazon.com/images/I/71lwsR7TsfL._AC_SL1500_.jpg",
+        "https://cdn.idealo.com/folder/Product/202618/6/202618635/s4_produktbild_max/motorola-edge-40-pro-bleu.jpg",
         15,
         "Edge 40 Pro",
         "Snapdragon 8 Gen 2",
@@ -838,7 +838,7 @@ VALUES (
         1
     ),
     (
-        "https://m.media-amazon.com/images/I/71+N5sSh4bL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/81AEx3xiLOL._AC_UF1000,1000_QL80_.jpg",
         16,
         "ROG Phone 7",
         "Snapdragon 8 Gen 2",
@@ -878,7 +878,7 @@ VALUES (
         1
     ),
     (
-        "https://m.media-amazon.com/images/I/71O7zYrjLNL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/51eR574Gm3L._AC_UF1000,1000_QL80_.jpg",
         17,
         "V60 ThinQ 5G",
         "Snapdragon 865",
@@ -918,7 +918,7 @@ VALUES (
         1
     ),
     (
-        "https://m.media-amazon.com/images/I/71z6F7slpRL._AC_SL1500_.jpg",
+        "https://media.ldlc.com/r1600/ld/products/00/06/05/03/LD0006050304.jpg",
         18,
         "U23 Pro",
         "Snapdragon 7 Gen 1",
@@ -958,7 +958,7 @@ VALUES (
         1
     ),
     (
-        "https://m.media-amazon.com/images/I/61bK6PMOC3L._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/619f09kK7tL._AC_UF1000,1000_QL80_.jpg",
         1,
         "iPhone 14",
         "A15 Bionic",
@@ -998,7 +998,7 @@ VALUES (
         1
     ),
     (
-        "https://m.media-amazon.com/images/I/61B0+qQJeDL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/61BGE6iu4AL._AC_UF1000,1000_QL80_.jpg",
         1,
         "iPhone 14 Plus",
         "A15 Bionic",
@@ -1038,7 +1038,7 @@ VALUES (
         1
     ),
     (
-        "https://m.media-amazon.com/images/I/61HHS0HrjpL._AC_SL1500_.jpg",
+        "https://files.refurbed.com/ii/iphone-14-pro-max-1662626716.jpg",
         1,
         "iPhone 14 Pro",
         "A16 Bionic",
@@ -1078,7 +1078,7 @@ VALUES (
         1
     ),
     (
-        "https://m.media-amazon.com/images/I/61XO4bORHUL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/610pghkO81L._AC_UF1000,1000_QL80_.jpg",
         1,
         "iPhone 14 Pro Max",
         "A16 Bionic",
@@ -1118,7 +1118,7 @@ VALUES (
         1
     ),
     (
-        "https://m.media-amazon.com/images/I/61nzPMNY8zL._AC_SL1500_.jpg",
+        "https://media.ldlc.com/r1600/ld/products/00/06/12/70/LD0006127009.jpg",
         2,
         "Galaxy S23",
         "Snapdragon 8 Gen 2",
@@ -1158,7 +1158,7 @@ VALUES (
         1
     ),
     (
-        "https://m.media-amazon.com/images/I/61u5b9nTzjL._AC_SL1500_.jpg",
+        "https://www.cdiscount.com/pdt2/7/2/8/1/550x550/sam8806094725728/rw/samsung-galaxy-s23-plus-256go-noir.jpg",
         2,
         "Galaxy S23+",
         "Snapdragon 8 Gen 2",
@@ -1198,7 +1198,7 @@ VALUES (
         1
     ),
     (
-        "https://m.media-amazon.com/images/I/71+QJ6LtKwL._AC_SL1500_.jpg",
+        "https://files.refurbed.com/ii/samsung-galaxy-a14-1693302753.jpg?t=fitdesign&h=600&w=800",
         2,
         "Galaxy A14",
         "MediaTek Helio G80",
@@ -1238,7 +1238,7 @@ VALUES (
         1
     ),
     (
-        "https://m.media-amazon.com/images/I/61bQBZMXVZL._AC_SL1500_.jpg",
+        "https://static.s-sfr.fr/media/catalogue/article/mobile/em6jhens/3_GOOGLEPIXEL8_green_Front-and-Back-Side_400x540px.png",
         3,
         "Pixel 8",
         "Google Tensor G3",
@@ -1278,7 +1278,7 @@ VALUES (
         1
     ),
     (
-        "https://m.media-amazon.com/images/I/71fsglWxoYL._AC_SL1500_.jpg",
+        "https://cdn.idealo.com/folder/Product/202321/1/202321108/s4_produktbild_max/xiaomi-13-lite.jpg",
         4,
         "Mi 13 Lite",
         "Snapdragon 7 Gen 1",
