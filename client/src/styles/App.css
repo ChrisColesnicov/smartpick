@@ -13,7 +13,7 @@
 :root {
   --main-white: #fefcf4;
   --main-black: #090909;
-  --shadow-color: rgba(0, 0, 0, 0.35);
+  --shadow-color: rgba(0, 0, 0, 0.6);
   --light-green: #cbf3f0;
   --main-green: #2ec4b6;
   --main-orange: #ff9f1c;
@@ -23,4 +23,13 @@
   --main-font-size: 16px;
   --reduced-font-size: 14px;
   --bigger-font-size: 20px;
+}
+
+main {
+  padding: 0 10%;
+}
+
+.main-title {
+  color: var(--dark-font);
+  margin: 1rem;
 }

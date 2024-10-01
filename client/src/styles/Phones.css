@@ -43,3 +43,19 @@
 .phone-card-text > p {
   color: var(--main-white);
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .phone-card > img {
+    width: 175px;
+    height: 175px;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 768px) {
+  .phone-card > img {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+  }
+}
