@@ -4,8 +4,10 @@ export default function PhoneCard({ phone }) {
   return (
     <section key={phone.phone_id} className="phone-card">
       <img src={phone.picture} alt={phone.model} />
-      <h2>{phone.brand_name}</h2>
-      <p>{phone.model}</p>
+      <div className="phone-card-text">
+        <p className="phone-card-brand">{phone.brand_name}</p>
+        <p className="phone-card-model">{phone.model}</p>
+      </div>
     </section>
   );
 }
