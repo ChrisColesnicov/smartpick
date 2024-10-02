@@ -7,11 +7,18 @@
   padding-top: 0.5rem;
   box-shadow: var(--shadow-color) 0px 5px 15px;
   transition: all 0.2s ease-in-out;
+  border: 2px solid transparent;
+}
+
+.phone-card.selected {
+  border-color: var(--main-green);
+  box-shadow: 0 0 15px 8px var(--main-green);
 }
 
 .phone-card:hover {
   transform: scale(1.05);
   box-shadow: 0 0 8px 8px var(--shadow-color);
+  cursor: pointer;
 }
 
 .phone-card-container {
@@ -42,6 +49,10 @@
 
 .phone-card-text > p {
   color: var(--main-white);
+}
+
+.select-logo {
+  display: none;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
