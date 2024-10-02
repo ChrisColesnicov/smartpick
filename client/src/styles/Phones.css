@@ -7,6 +7,12 @@
   padding-top: 0.5rem;
   box-shadow: var(--shadow-color) 0px 5px 15px;
   transition: all 0.2s ease-in-out;
+  border: 2px solid transparent;
+}
+
+.phone-card.selected {
+  border-color: var(--main-green);
+  box-shadow: 0 0 15px 8px var(--main-green);
 }
 
 .phone-card:hover {

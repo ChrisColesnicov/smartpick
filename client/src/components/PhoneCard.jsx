@@ -10,7 +10,10 @@ export default function PhoneCard({ phone, compare, handleCompare }) {
     setChecked(!checked);
   };
   return (
-    <section key={phone.phone_id} className="phone-card">
+    <section
+      key={phone.phone_id}
+      className={`phone-card ${checked ? "selected" : ""}`}
+    >
       <Checkbox
         label="Compare"
         value={checked}
