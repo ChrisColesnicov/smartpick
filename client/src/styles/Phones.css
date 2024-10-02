@@ -12,6 +12,7 @@
 .phone-card:hover {
   transform: scale(1.05);
   box-shadow: 0 0 8px 8px var(--shadow-color);
+  cursor: pointer;
 }
 
 .phone-card-container {
@@ -42,6 +43,10 @@
 
 .phone-card-text > p {
   color: var(--main-white);
+}
+
+.select-logo {
+  display: none;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
