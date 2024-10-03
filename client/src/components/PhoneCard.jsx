@@ -9,17 +9,20 @@ export default function PhoneCard({ phone, compare, handleCompare }) {
     handleCompare(phone.phone_id);
     setChecked(!checked);
   };
+
   return (
     <section
       key={phone.phone_id}
       className={`phone-card ${checked ? "selected" : ""}`}
     >
+      <div className="checkbox-hover">
       <Checkbox
         label="Compare"
         value={checked}
         onChange={handleCheck}
         disabled={!checked && compare.length >= 3}
       />
+      </div>
       <img src={phone.picture} alt={phone.model} />
       <div className="phone-card-text">
         <p className="phone-card-brand">{phone.brand_name}</p>
