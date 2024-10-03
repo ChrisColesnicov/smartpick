@@ -10,7 +10,7 @@ export default function Checkbox({ label, value, onChange, disabled }) {
         name={label}
         disabled={disabled}
       />
-      {label}
+      .
     </label>
   );
 }
