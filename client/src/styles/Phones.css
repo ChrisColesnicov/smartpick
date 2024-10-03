@@ -77,6 +77,92 @@
   display: none;
 }
 
+.phone-list {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.compared-phones-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--light-green);
+  padding: 1rem;
+  border-radius: 16px 0 0 16px;
+  height: fit-content;
+  gap: 1rem;
+}
+
+.compared-phones-list > button {
+  border: none;
+  border-radius: 16px;
+  padding: 1rem 2rem;
+  transition: all 0.2s ease-in-out;
+  box-shadow: var(--shadow-color) 0px 5px 10px;
+  font-size: var(--main-font-size);
+  font-weight: 500;
+}
+
+.compared-phones-list > button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 8px 4px var(--shadow-color);
+  cursor: pointer;
+}
+
+.compare-card {
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem;
+  padding-top: 0.5rem;
+  box-shadow: var(--shadow-color) 0px 5px 15px;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid transparent;
+}
+
+.empty-compare-card {
+  border-radius: 16px;
+  width: 150px;
+  height: 150px;
+  border: 2px solid transparent;
+  display: flex;
+  justify-content: center;
+}
+
+.empty-phone-card-text {
+  background-color: var(--shadow-color);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  text-align: center;
+  padding: 2rem;
+}
+
+.empty-phone-card-text > p {
+  color: var(--main-white);
+}
+
+.compare-card > img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.5s ease-out forwards;
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .phone-card > img {
     width: 175px;

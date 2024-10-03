@@ -25,10 +25,6 @@
   --bigger-font-size: 20px;
 }
 
-main {
-  padding: 0 10%;
-}
-
 .main-title {
   color: var(--dark-font);
   margin: 1rem;
