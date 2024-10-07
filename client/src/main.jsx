@@ -6,7 +6,7 @@ import App from "./App";
 import Home from "./pages/Home";
 import Phones from "./pages/Phones";
 import Compare from "./pages/Compare";
-import getPhones from "./services/phoneRequests";
+import { getPhones } from "./services/phoneRequests";
 import { CompareProvider } from "./contexts/CompareContext";
 
 const router = createBrowserRouter([
