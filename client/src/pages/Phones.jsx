@@ -9,7 +9,7 @@ export default function Phones() {
   const phones = useLoaderData();
   const navigate = useNavigate();
   const [compare, setCompare] = useState([]);
-  const { compared, setCompared } = useContext(CompareContext);
+  const { setCompared } = useContext(CompareContext);
 
   const handleCompare = (id) => {
     if (compare.includes(id)) {
@@ -25,8 +25,6 @@ export default function Phones() {
 
   const handleCompareButton = () => {
     setCompared(compare);
-    console.info("compare", compare);
-    console.info("compared", compared);
     navigate("/compare");
   };
 
