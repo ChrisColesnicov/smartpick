@@ -1,12 +1,15 @@
-import { useState } from "react";
-import { useLoaderData } from "react-router-dom";
+import { useState, useContext } from "react";
+import { useLoaderData, useNavigate } from "react-router-dom";
 import PhoneCard from "../components/PhoneCard";
 import CompareCard from "../components/CompareCard";
 import EmptyCard from "../components/EmptyCard";
+import CompareContext from "../contexts/CompareContext";
 
 export default function Phones() {
   const phones = useLoaderData();
+  const navigate = useNavigate();
   const [compare, setCompare] = useState([]);
+  const { compared, setCompared } = useContext(CompareContext);
 
   const handleCompare = (id) => {
     if (compare.includes(id)) {
@@ -20,18 +23,29 @@ export default function Phones() {
     }
   };
 
-  console.info(compare);
+  const handleCompareButton = () => {
+    setCompared(compare);
+    console.info("compare", compare);
+    console.info("compared", compared);
+    navigate("/compare");
+  };
 
   return (
     <div>
       <h1 className="main-title">Phones page</h1>
       <div className="phone-list">
         <aside className="compared-phones-list">
-          <button type="button">Compare</button>
+          <button type="button" onClick={handleCompareButton}>
+            Compare
+          </button>
           {phones
             .filter((phone) => compare.includes(phone.phone_id))
             .map((phone) => (
-              <CompareCard key={phone.phone_id} phone={phone} className="slide-in"/>
+              <CompareCard
+                key={phone.phone_id}
+                phone={phone}
+                className="slide-in"
+              />
             ))}
           {compare.length < 3 ? <EmptyCard compare={compare} /> : ""}
         </aside>

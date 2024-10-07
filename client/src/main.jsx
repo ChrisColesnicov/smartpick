@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App";
@@ -8,6 +7,7 @@ import Home from "./pages/Home";
 import Phones from "./pages/Phones";
 import Compare from "./pages/Compare";
 import getPhones from "./services/phoneRequests";
+import { CompareProvider } from "./contexts/CompareContext";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +34,8 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <CompareProvider>
+      <RouterProvider router={router} />
+    </CompareProvider>
   </React.StrictMode>
 );
