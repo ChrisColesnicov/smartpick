@@ -43,7 +43,7 @@ class PhoneRepository extends AbstractRepository {
         bl.name AS bluetooth_version,
         wifi.name AS wifi_version,
         connectivity.name AS connectivity_version,
-        sys.name AS Operating_system,
+        sys.name AS operating_system,
         p.minimum_storage,
         p.maximum_storage,
         p.storage_extension_available,

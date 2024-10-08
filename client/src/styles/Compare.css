@@ -1,0 +1,37 @@
+.phone-details-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 6rem;
+  gap: 1rem;
+}
+
+.phone-details {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.phone-details-box {
+  background-color: var(--light-green);
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.phone-details-cards {
+  display: flex;
+}
+
+.phone-details-release {
+  display: flex;
+}
+
+.details-title {
+  width: 100vh;
+}
