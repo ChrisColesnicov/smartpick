@@ -6,6 +6,8 @@ import App from "./App";
 import Home from "./pages/Home";
 import Phones from "./pages/Phones";
 import Compare from "./pages/Compare";
+import AdminPanel from "./pages/AdminPanel";
+
 import { getPhones } from "./services/phoneRequests";
 import { CompareProvider } from "./contexts/CompareContext";
 
@@ -26,6 +28,10 @@ const router = createBrowserRouter([
         path: "/compare",
         element: <Compare />,
       },
+      {
+        path: "/admin",
+        element: <AdminPanel />,
+      }
     ],
   },
 ]);
