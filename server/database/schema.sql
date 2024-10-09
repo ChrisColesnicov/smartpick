@@ -95,7 +95,7 @@ INSERT INTO
 VALUES ("Ceramic Shield"),
     ("Gorilla Glass Victus 2"),
     ("Gorilla Glass Victus"),
-    ("Gorillas Glass 6"),
+    ("Gorilla Glass 6"),
     ("Gorilla Glass 5"),
     ("Other");
 

@@ -24,3 +24,25 @@ export async function getPhonesById(ids) {
     return [];
   }
 }
+
+export async function getAnnexTables() {
+  const tables = [
+    "connect",
+    "screen",
+    "cover",
+    "os",
+    "wifi",
+    "bluetooth",
+    "brands",
+  ];
+  try {
+    const requests = tables.map((table) =>
+      myAxios.get(`${import.meta.env.VITE_API_URL}/api/phones/specs/${table}`)
+    );
+    const responses = await Promise.all(requests);
+    return responses.map((response) => response.data);
+  } catch (error) {
+    console.error(error);
+    return [];
+  }
+}
