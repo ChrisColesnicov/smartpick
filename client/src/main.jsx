@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Phones from "./pages/Phones";
 import Compare from "./pages/Compare";
 import AdminPanel from "./pages/AdminPanel";
+import Add from "./pages/Add";
 
 import { getPhones } from "./services/phoneRequests";
 import { CompareProvider } from "./contexts/CompareContext";
@@ -31,7 +32,11 @@ const router = createBrowserRouter([
       {
         path: "/admin",
         element: <AdminPanel />,
-      }
+      },
+      {
+        path: "/admin/add",
+        element: <Add />,
+      },
     ],
   },
 ]);
