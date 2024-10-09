@@ -4,7 +4,7 @@ export default function SelectInput({ value, name, onChange, options, label }) {
   return (
     <div>
       <label htmlFor={name}>{label}</label>
-      <select name={name} id={name} value={value} onChange={onChange} required>
+      <select name={name} id={name} value={value} onChange={onChange}>
         <option value="" disabled>
           -- {label} list --
         </option>
@@ -23,5 +23,5 @@ SelectInput.propTypes = {
   label: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
-  options: PropTypes.arrayOf(PropTypes.string).isRequired,
+  options: PropTypes.arrayOf(PropTypes.objectOf).isRequired,
 };
