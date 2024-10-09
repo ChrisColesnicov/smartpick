@@ -24,6 +24,7 @@ const read = async (req, res, next) => {
 
 const add = async (req, res, next) => {
   const phone = req.body;
+  phone.admin_id = 1;
   try {
     const result = await tables.phone.create(phone);
     res.status(201).json(result);
