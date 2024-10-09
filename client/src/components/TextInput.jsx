@@ -7,10 +7,13 @@ export default function TextInput({
   onChange,
   comment,
   label,
+  classname,
 }) {
   return (
-    <div>
-      <label htmlFor={name}>{label}</label>
+    <div className={classname}>
+      <label htmlFor={name} className="input-group-label">
+        {label}
+      </label>
       <input
         type={data}
         id={name}
@@ -18,6 +21,7 @@ export default function TextInput({
         placeholder={comment}
         value={value}
         onChange={onChange}
+        className="input-group-input"
       />
     </div>
   );
@@ -30,4 +34,5 @@ TextInput.propTypes = {
   label: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
   comment: PropTypes.string.isRequired,
+  classname: PropTypes.string.isRequired,
 };
