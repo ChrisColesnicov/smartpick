@@ -5,6 +5,54 @@ class PhoneRepository extends AbstractRepository {
     super({ table: "phone" });
   }
 
+  async create(phone) {
+    const [rows] = await this.database.query(
+      `INSERT INTO ${this.table} (picture, brand_id, model, chip, ram, price, release_year, screen_size, screen_type_id, screen_variable_refresh, screen_min_refresh, screen_max_refresh, screen_protection_type_id, brightness_typical, brightness_max, battery_size, battery_recharge_rate, wireless_charging, camera_number, wide_angle_Mpx, wide_angle_focus, ultrawide_angle_Mpx, ultrawide_angle_focus, other_Mpx, other_focus, video_record_capacity, height, width, thickness, weight, phone_material, bluetooth_id, wifi_id, connectivity_id, system_type_id, minimum_storage, maximum_storage, storage_extension_available, admin_id ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? , ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+      [
+        phone.picture,
+        phone.brand_id,
+        phone.model,
+        phone.chip,
+        phone.ram,
+        phone.price,
+        phone.release_year,
+        phone.screen_size,
+        phone.screen_type_id,
+        phone.screen_variable_refresh,
+        phone.screen_min_refresh,
+        phone.screen_max_refresh,
+        phone.screen_protection_type_id,
+        phone.brightness_typical,
+        phone.brightness_max,
+        phone.battery_size,
+        phone.battery_recharge_rate,
+        phone.wireless_charging,
+        phone.camera_number,
+        phone.wide_angle_Mpx,
+        phone.wide_angle_focus,
+        phone.ultrawide_angle_Mpx,
+        phone.ultrawide_angle_focus,
+        phone.other_Mpx,
+        phone.other_focus,
+        phone.video_record_capacity,
+        phone.height,
+        phone.width,
+        phone.thickness,
+        phone.weight,
+        phone.phone_material,
+        phone.bluetooth_id,
+        phone.wifi_id,
+        phone.connectivity_id,
+        phone.system_type_id,
+        phone.minimum_storage,
+        phone.maximum_storage,
+        phone.storage_extension_available,
+        phone.admin_id,
+      ]
+    );
+    return rows;
+  }
+
   async read(id) {
     const [rows] = await this.database.query(
       `SELECT 

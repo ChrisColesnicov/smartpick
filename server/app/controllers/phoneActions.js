@@ -22,4 +22,15 @@ const read = async (req, res, next) => {
   }
 };
 
-module.exports = { browse, read };
+const add = async (req, res, next) => {
+  const phone = req.body;
+  try {
+    const result = await tables.phone.create(phone);
+    res.status(201).json(result);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+    next(error);
+  }
+};
+
+module.exports = { browse, read, add };
