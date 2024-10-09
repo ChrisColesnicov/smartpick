@@ -41,5 +41,6 @@ router.get("/specs/brands/:id", brandActions.read);
 
 router.get("/", phoneActions.browse);
 router.get("/:id", phoneActions.read);
+router.post("/", phoneActions.add);
 
 module.exports = router;
