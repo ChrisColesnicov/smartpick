@@ -9,7 +9,7 @@ import Compare from "./pages/Compare";
 import AdminPanel from "./pages/AdminPanel";
 import Add from "./pages/Add";
 
-import { getPhones } from "./services/phoneRequests";
+import { getAnnexTables, getPhones } from "./services/phoneRequests";
 import { CompareProvider } from "./contexts/CompareContext";
 
 const router = createBrowserRouter([
@@ -36,6 +36,7 @@ const router = createBrowserRouter([
       {
         path: "/admin/add",
         element: <Add />,
+        loader: getAnnexTables,
       },
     ],
   },

@@ -9,8 +9,8 @@ export default function SelectInput({ value, name, onChange, options, label }) {
           -- {label} list --
         </option>
         {options.map((option) => (
-          <option key={option} value={option}>
-            {option}
+          <option key={option.id} value={option.id}>
+            {option.name}
           </option>
         ))}
       </select>

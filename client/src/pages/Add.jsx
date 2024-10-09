@@ -1,8 +1,23 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import { useLoaderData } from "react-router-dom";
 import TextInput from "../components/TextInput";
 import SelectInput from "../components/SelectInput";
 
 export default function Add() {
+  const [
+    connectOptions,
+    screenOptions,
+    coverOptions,
+    osOptions,
+    wifiOptions,
+    bluetoothOptions,
+    brandOptions,
+  ] = useLoaderData();
+  const genericOptions = [
+    { id: 0, name: "No" },
+    { id: 1, name: "Yes" },
+  ];
+
   const [formData, setFormData] = useState({
     picture: "",
     brand_id: "",
@@ -44,31 +59,14 @@ export default function Add() {
     storage_extension_available: "",
     admin_id: "",
   });
-  const [brandOptions, setBrandOptions] = useState([]);
-  const [screenTypeOptions, setScreenTypeOptions] = useState([]);
-  const [screenProtectionOptions, setScreenProtectionOptions] = useState([]);
-  const [variableRefresh, setVariableRefresh] = useState([]);
-  const [wirelessCharging, setWirelessCharging] = useState([]);
-  const [bluetoothOptions, setBluetoothOptions] = useState([]);
-  const [wifiOptions, setWifiOptions] = useState([]);
-  const [connectivityOptions, setConnectivityOptions] = useState([]);
-  const [systemOptions, setSystemOptions] = useState([]);
-  const [storageOptions, setStorageOptions] = useState([]);
-
-  console.info(
-    setScreenTypeOptions,
-    setScreenProtectionOptions,
-    setVariableRefresh,
-    setWifiOptions,
-    setWirelessCharging,
-    setBluetoothOptions,
-    setConnectivityOptions,
-    setSystemOptions,
-    setStorageOptions
-  );
 
   const fields = [
-    { type: "select", name: "brand_id", label: "Brand", options: brandOptions },
+    {
+      type: "select",
+      name: "brand_id",
+      label: "Brand",
+      options: brandOptions,
+    },
     {
       type: "text",
       name: "model",
@@ -103,13 +101,13 @@ export default function Add() {
       type: "select",
       name: "screen_type_id",
       label: "Screen type",
-      options: screenTypeOptions,
+      options: screenOptions,
     },
     {
       type: "select",
       name: "screen_protection_type_id",
       label: "Protection type",
-      options: screenProtectionOptions,
+      options: coverOptions,
     },
     {
       type: "text",
@@ -126,8 +124,8 @@ export default function Add() {
     {
       type: "select",
       name: "screen_variable_refresh",
-      label: "Answer",
-      options: variableRefresh,
+      label: "Variable refresh",
+      options: genericOptions,
     },
     {
       type: "text",
@@ -168,8 +166,8 @@ export default function Add() {
     {
       type: "select",
       name: "wireless_charging",
-      label: "Answer",
-      options: wirelessCharging,
+      label: "Wireless charging",
+      options: genericOptions,
     },
     {
       type: "text",
@@ -265,13 +263,13 @@ export default function Add() {
       type: "select",
       name: "connectivity_id",
       label: "Connectivity",
-      options: connectivityOptions,
+      options: connectOptions,
     },
     {
       type: "select",
       name: "system_type_id",
       label: "OS",
-      options: systemOptions,
+      options: osOptions,
     },
     {
       type: "text",
@@ -288,19 +286,10 @@ export default function Add() {
     {
       type: "select",
       name: "storage_extension_available",
-      label: "Answer",
-      options: storageOptions,
+      label: "Storage extension",
+      options: genericOptions,
     },
   ];
-
-  // test select from backend
-  useEffect(() => {
-    const fetchBrandOptions = async () => {
-      const optionsFromBackend = ["Apple", "Samsung", "Google", "OnePlus"];
-      setBrandOptions(optionsFromBackend);
-    };
-    fetchBrandOptions();
-  }, []);
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
