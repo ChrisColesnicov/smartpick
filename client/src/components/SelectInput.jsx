@@ -1,9 +1,18 @@
 import PropTypes from "prop-types";
 
-export default function SelectInput({ value, name, onChange, options, label }) {
+export default function SelectInput({
+  value,
+  name,
+  onChange,
+  options,
+  label,
+  classname,
+}) {
   return (
-    <div>
-      <label htmlFor={name}>{label}</label>
+    <div className={classname}>
+      <label htmlFor={name} className="input-group-label">
+        {label}
+      </label>
       <select name={name} id={name} value={value} onChange={onChange}>
         <option value="" disabled>
           -- {label} list --
@@ -21,6 +30,7 @@ export default function SelectInput({ value, name, onChange, options, label }) {
 SelectInput.propTypes = {
   value: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
+  classname: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
   options: PropTypes.arrayOf(PropTypes.objectOf).isRequired,

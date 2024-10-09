@@ -67,6 +67,7 @@ export default function Add() {
       name: "brand_id",
       label: "Brand",
       options: brandOptions,
+      class: "brand-input",
     },
     {
       type: "text",
@@ -74,6 +75,7 @@ export default function Add() {
       name: "model",
       label: "Model",
       comment: "Enter model name",
+      class: "model-input",
     },
     {
       type: "text",
@@ -81,6 +83,7 @@ export default function Add() {
       name: "picture",
       label: "Picture",
       comment: "Enter a link for a front/back picture",
+      class: "picture-input",
     },
     {
       type: "text",
@@ -88,6 +91,7 @@ export default function Add() {
       name: "release_year",
       label: "Release Year",
       comment: "Enter the release year",
+      class: "release-year-input",
     },
     {
       type: "text",
@@ -95,6 +99,7 @@ export default function Add() {
       name: "price",
       label: "Price",
       comment: "Enter price at release",
+      class: "price-input",
     },
     {
       type: "text",
@@ -102,18 +107,21 @@ export default function Add() {
       name: "screen_size",
       label: "Size (in inches)",
       comment: "Enter screen size",
+      class: "screen-input",
     },
     {
       type: "select",
       name: "screen_type_id",
       label: "Screen type",
       options: screenOptions,
+      class: "screen-input",
     },
     {
       type: "select",
       name: "screen_protection_type_id",
       label: "Protection type",
       options: coverOptions,
+      class: "screen-input",
     },
     {
       type: "text",
@@ -121,6 +129,7 @@ export default function Add() {
       name: "brightness_typical",
       label: "Typical Brightness (nits)",
       comment: "Enter typical brightness",
+      class: "brightness-input",
     },
     {
       type: "text",
@@ -128,12 +137,14 @@ export default function Add() {
       name: "brightness_max",
       label: "Max Brightness (nits)",
       comment: "Enter max brightness",
+      class: "brightness-input",
     },
     {
       type: "select",
       name: "screen_variable_refresh",
       label: "Variable refresh",
       options: genericOptions,
+      class: "refresh-input",
     },
     {
       type: "text",
@@ -141,6 +152,7 @@ export default function Add() {
       name: "screen_min_refresh",
       label: "Minimum refresh (Hz)",
       comment: "Enter minimum refresh rate",
+      class: "refresh-input",
     },
     {
       type: "text",
@@ -148,6 +160,7 @@ export default function Add() {
       name: "screen_max_refresh",
       label: "Maximum refresh (Hz)",
       comment: "Enter maximum refresh rate",
+      class: "refresh-input",
     },
     {
       type: "text",
@@ -155,6 +168,7 @@ export default function Add() {
       name: "chip",
       label: "Chip name",
       comment: "Enter processor name and model",
+      class: "chip-input",
     },
     {
       type: "text",
@@ -162,6 +176,7 @@ export default function Add() {
       name: "ram",
       label: "RAM amount (Go)",
       comment: "Enter RAM amount",
+      class: "chip-input",
     },
     {
       type: "text",
@@ -169,6 +184,7 @@ export default function Add() {
       name: "battery_size",
       label: "Battery size (mAh)",
       comment: "Enter battery size",
+      class: "battery-input",
     },
     {
       type: "text",
@@ -176,12 +192,14 @@ export default function Add() {
       name: "battery_recharge_rate",
       label: "Charging power (W)",
       comment: "Enter max charging power",
+      class: "battery-input",
     },
     {
       type: "select",
       name: "wireless_charging",
       label: "Wireless charging",
       options: genericOptions,
+      class: "battery-input",
     },
     {
       type: "text",
@@ -189,6 +207,7 @@ export default function Add() {
       name: "camera_number",
       label: "Number of Cameras (back only)",
       comment: "Enter the number of cameras",
+      class: "camera-input",
     },
     {
       type: "text",
@@ -196,6 +215,7 @@ export default function Add() {
       name: "wide_angle_Mpx",
       label: "Mpx for wide camera",
       comment: "Enter the number of Mpx",
+      class: "camera-input",
     },
     {
       type: "text",
@@ -203,6 +223,7 @@ export default function Add() {
       name: "wide_angle_focus",
       label: "Focus for wide camera",
       comment: "Enter the focus",
+      class: "camera-input",
     },
     {
       type: "text",
@@ -210,6 +231,7 @@ export default function Add() {
       name: "ultrawide_angle_Mpx",
       label: "Mpx for ultrawide camera",
       comment: "Enter the number of Mpx",
+      class: "camera-input",
     },
     {
       type: "text",
@@ -217,6 +239,7 @@ export default function Add() {
       name: "ultrawide_angle_focus",
       label: "Focus for ultrawide camera",
       comment: "Enter the focus",
+      class: "camera-input",
     },
     {
       type: "text",
@@ -224,6 +247,7 @@ export default function Add() {
       name: "other_Mpx",
       label: "Mpx for other camera (if any)",
       comment: "Enter the number of Mpx (leave empty if none)",
+      class: "camera-input",
     },
     {
       type: "text",
@@ -231,6 +255,7 @@ export default function Add() {
       name: "other_focus",
       label: "Focus for other camera (if any)",
       comment: "Enter the focus (leave empty if none)",
+      class: "camera-input",
     },
     {
       type: "text",
@@ -238,6 +263,7 @@ export default function Add() {
       name: "video_record_capacity",
       label: "Best record capacity for videos",
       comment: "Enter the max resolution and FPS",
+      class: "camera-input",
     },
     {
       type: "text",
@@ -245,6 +271,7 @@ export default function Add() {
       name: "height",
       label: "Height (mm)",
       comment: "Enter the height",
+      class: "hardware-input",
     },
     {
       type: "text",
@@ -252,6 +279,7 @@ export default function Add() {
       name: "width",
       label: "Width (mm)",
       comment: "Enter the width",
+      class: "hardware-input",
     },
     {
       type: "text",
@@ -259,6 +287,7 @@ export default function Add() {
       name: "thickness",
       label: "Thickness (mm)",
       comment: "Enter the thickness",
+      class: "hardware-input",
     },
     {
       type: "text",
@@ -266,6 +295,7 @@ export default function Add() {
       name: "weight",
       label: "Weight (g)",
       comment: "Enter the weight",
+      class: "hardware-input",
     },
     {
       type: "text",
@@ -273,30 +303,35 @@ export default function Add() {
       name: "phone_material",
       label: "Phone material (main)",
       comment: "Enter the material",
+      class: "hardware-input",
     },
     {
       type: "select",
       name: "bluetooth_id",
       label: "Bluetooth versions",
       options: bluetoothOptions,
+      class: "bluetooth-input",
     },
     {
       type: "select",
       name: "wifi_id",
       label: "Wifi versions",
       options: wifiOptions,
+      class: "wifi-input",
     },
     {
       type: "select",
       name: "connectivity_id",
       label: "Connectivity",
       options: connectOptions,
+      class: "network-input",
     },
     {
       type: "select",
       name: "system_type_id",
-      label: "OS",
+      label: "Operating System",
       options: osOptions,
+      class: "os-input",
     },
     {
       type: "text",
@@ -304,6 +339,7 @@ export default function Add() {
       name: "minimum_storage",
       label: "Minimum storage (Gb)",
       comment: "Enter the minimum storage available",
+      class: "storage-input",
     },
     {
       type: "text",
@@ -311,12 +347,14 @@ export default function Add() {
       name: "maximum_storage",
       label: "Maximum storage (Gb)",
       comment: "Enter the maximum storage available",
+      class: "storage-input",
     },
     {
       type: "select",
       name: "storage_extension_available",
       label: "Storage extension",
       options: genericOptions,
+      class: "storage-input",
     },
   ];
 
@@ -341,7 +379,7 @@ export default function Add() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="input-form">
       {fields.map((field) => {
         if (field.type === "text") {
           return (
@@ -353,6 +391,7 @@ export default function Add() {
               value={formData[field.name]}
               onChange={handleInputChange}
               comment={field.comment}
+              classname={field.class}
             />
           );
         }
@@ -365,6 +404,7 @@ export default function Add() {
               value={formData[field.name]}
               onChange={handleInputChange}
               options={field.options}
+              classname={field.class}
             />
           );
         }
