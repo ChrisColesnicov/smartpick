@@ -23,3 +23,15 @@ export async function editPhone(phone) {
   }
   return null;
 }
+
+export async function deletePhone(id) {
+  try {
+    const response = await myAxios.delete(`/api/phones/${id}`);
+    if (response.status === 204) {
+      return response.data;
+    }
+  } catch (error) {
+    console.error(error);
+  }
+  return null;
+}
