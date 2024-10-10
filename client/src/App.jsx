@@ -4,12 +4,16 @@ import "./styles/App.css";
 import "./styles/Phones.css";
 import "./styles/Compare.css";
 import "./styles/Add.css";
+import Nav from "./components/Nav";
 
 function App() {
   return (
-    <main>
-      <Outlet />
-    </main>
+    <>
+      <Nav />
+      <main>
+        <Outlet />
+      </main>
+    </>
   );
 }
 
