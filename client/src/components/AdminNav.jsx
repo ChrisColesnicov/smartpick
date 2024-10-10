@@ -4,6 +4,7 @@ export default function AdminNav() {
     return (
         <div>
             <Link to="/admin/add">Add phone</Link>
+            <Link to="/admin/edit">Edit phone</Link>
         </div>
     )
 }

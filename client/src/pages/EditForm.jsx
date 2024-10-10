@@ -1,10 +1,11 @@
-import { useState } from "react";
-import { useLoaderData } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useLoaderData, useParams } from "react-router-dom";
 import TextInput from "../components/TextInput";
 import SelectInput from "../components/SelectInput";
-import { addPhone } from "../services/phoneServices";
+import { editPhone } from "../services/phoneServices";
+import { getPhoneById } from "../services/phoneRequests";
 
-export default function Add() {
+export default function EditForm() {
   const [
     connectOptions,
     screenOptions,
@@ -14,6 +15,27 @@ export default function Add() {
     bluetoothOptions,
     brandOptions,
   ] = useLoaderData();
+  const { id } = useParams();
+  const [phone, setPhone] = useState("");
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchPhone = async () => {
+      try {
+        const phoneData = await getPhoneById(id);
+        setPhone({
+          ...phoneData,
+          phone_id: Number(id),
+        });
+        setLoading(false);
+      } catch (error) {
+        console.error(error);
+        // toast error
+      }
+    };
+    fetchPhone();
+  }, [id]);
+
   const genericOptions = [
     { id: 0, name: "No" },
     { id: 1, name: "Yes" },
@@ -60,6 +82,53 @@ export default function Add() {
     storage_extension_available: "",
     admin_id: "",
   });
+
+  useEffect(() => {
+    if (!loading && phone) {
+      setFormData({
+        picture: phone.picture || "",
+        brand_id: phone.brand_id || "",
+        model: phone.model || "",
+        chip: phone.chip || "",
+        ram: phone.ram || "",
+        price: phone.price || "",
+        release_year: phone.release_year || "",
+        screen_size: phone.screen_size || "",
+        screen_type_id: phone.screen_type_id || "",
+        screen_variable_refresh: phone.screen_variable_refresh,
+        screen_min_refresh: phone.screen_min_refresh || "",
+        screen_max_refresh: phone.screen_max_refresh || "",
+        screen_protection_type_id: phone.screen_protection_type_id || "",
+        brightness_typical: phone.brightness_typical || "",
+        brightness_max: phone.brightness_max || "",
+        battery_size: phone.battery_size || "",
+        battery_recharge_rate: phone.battery_recharge_rate || "",
+        wireless_charging: phone.wireless_charging,
+        camera_number: phone.camera_number || "",
+        wide_angle_Mpx: phone.wide_angle_Mpx || "",
+        wide_angle_focus: phone.wide_angle_focus || "",
+        ultrawide_angle_Mpx: phone.ultrawide_angle_Mpx || "",
+        ultrawide_angle_focus: phone.ultrawide_angle_focus || "",
+        other_Mpx: phone.other_Mpx || "",
+        other_focus: phone.other_focus || "",
+        video_record_capacity: phone.video_record_capacity || "",
+        height: phone.height || "",
+        width: phone.width || "",
+        thickness: phone.thickness || "",
+        weight: phone.weight || "",
+        phone_material: phone.phone_material || "",
+        bluetooth_id: phone.bluetooth_id || "",
+        wifi_id: phone.wifi_id || "",
+        connectivity_id: phone.connectivity_id || "",
+        system_type_id: phone.system_type_id || "",
+        minimum_storage: phone.minimum_storage || "",
+        maximum_storage: phone.maximum_storage || "",
+        storage_extension_available: phone.storage_extension_available,
+        admin_id: phone.admin_id || "",
+        phone_id: phone.phone_id,
+      });
+    }
+  }, [loading, phone]);
 
   const fields = [
     {
@@ -369,7 +438,7 @@ export default function Add() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await addPhone(formData);
+      const response = await editPhone(formData);
       if (response) {
         // toast succès
       }
@@ -411,7 +480,7 @@ export default function Add() {
         return null;
       })}
 
-      <button type="submit">Submit</button>
+      <button type="submit">Edit</button>
     </form>
   );
 }

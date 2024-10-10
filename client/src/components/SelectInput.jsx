@@ -28,7 +28,7 @@ export default function SelectInput({
 }
 
 SelectInput.propTypes = {
-  value: PropTypes.string.isRequired,
+  value: PropTypes.node.isRequired,
   label: PropTypes.string.isRequired,
   classname: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,

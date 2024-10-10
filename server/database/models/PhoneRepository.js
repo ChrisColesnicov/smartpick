@@ -58,6 +58,7 @@ class PhoneRepository extends AbstractRepository {
       `SELECT 
         p.id AS phone_id,
         p.picture,
+        b.id AS brand_id,
         b.name AS brand_name,
         p.model,
         p.chip,
@@ -65,10 +66,12 @@ class PhoneRepository extends AbstractRepository {
         p.price,
         p.release_year,
         p.screen_size,
+        st.id AS screen_type_id,
         st.name AS screen_type_name,
         p.screen_variable_refresh,
         p.screen_min_refresh,
         p.screen_max_refresh,
+        spt.id AS screen_protection_type_id,
         spt.name AS screen_protection_name,
         p.brightness_typical,
         p.brightness_max,
@@ -88,9 +91,13 @@ class PhoneRepository extends AbstractRepository {
         p.thickness,
         p.weight,
         p.phone_material,
+        bl.id AS bluetooth_id,
         bl.name AS bluetooth_version,
+        wifi.id AS wifi_id,
         wifi.name AS wifi_version,
+        connectivity.id AS connectivity_id,
         connectivity.name AS connectivity_version,
+        sys.id AS system_type_id,
         sys.name AS operating_system,
         p.minimum_storage,
         p.maximum_storage,
@@ -225,7 +232,7 @@ class PhoneRepository extends AbstractRepository {
         phone.maximum_storage,
         phone.storage_extension_available,
         phone.admin_id,
-        phone.id
+        phone.phone_id,
       ]
     );
     return result.affectedRows;
