@@ -43,5 +43,6 @@ router.get("/", phoneActions.browse);
 router.get("/:id", phoneActions.read);
 router.post("/", phoneActions.add);
 router.put("/", phoneActions.edit);
+router.delete("/:id", phoneActions.destroy);
 
 module.exports = router;

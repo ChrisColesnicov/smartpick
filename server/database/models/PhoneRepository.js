@@ -237,6 +237,14 @@ class PhoneRepository extends AbstractRepository {
     );
     return result.affectedRows;
   }
+
+  async delete(id) {
+    const [result] = await this.database.query(
+      `delete from ${this.table} where id = ?`,
+      [id]
+    );
+    return result.affectedRows;
+  }
 }
 
 module.exports = PhoneRepository;
