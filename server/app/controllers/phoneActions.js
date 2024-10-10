@@ -22,6 +22,16 @@ const read = async (req, res, next) => {
   }
 };
 
+const edit = async (req, res, next) => {
+  const phone = req.body;
+  try {
+    const result = await tables.phone.update(phone);
+    res.status(200).json(result);
+  } catch (error) {
+    next(error);
+  }
+};
+
 const add = async (req, res, next) => {
   const phone = req.body;
   phone.admin_id = 1;
@@ -34,4 +44,4 @@ const add = async (req, res, next) => {
   }
 };
 
-module.exports = { browse, read, add };
+module.exports = { browse, read, add, edit };
