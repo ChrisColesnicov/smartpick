@@ -10,13 +10,14 @@ export default function Phones() {
   const navigate = useNavigate();
   const [compare, setCompare] = useState([]);
   const { setCompared } = useContext(CompareContext);
+  const maxCompare = 3;
 
   const handleCompare = (id) => {
     if (compare.includes(id)) {
       setCompare((prevCompare) =>
         prevCompare.filter((phoneId) => phoneId !== id)
       );
-    } else if (compare.length < 3) {
+    } else if (compare.length < maxCompare) {
       setCompare((prevCompare) => [...prevCompare, id]);
     } else {
       // toast info 3 phones déjà sélectionnés
@@ -45,7 +46,7 @@ export default function Phones() {
                 className="slide-in"
               />
             ))}
-          {compare.length < 3 ? <EmptyCard compare={compare} /> : ""}
+          {compare.length < maxCompare ? <EmptyCard compare={compare} /> : ""}
         </aside>
         <section className="phone-card-container">
           {phones.map((phone) => (
