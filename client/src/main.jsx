@@ -8,9 +8,11 @@ import Phones from "./pages/Phones";
 import Compare from "./pages/Compare";
 import AdminPanel from "./pages/AdminPanel";
 import Add from "./pages/Add";
+import Edit from "./pages/Edit";
 
 import { getAnnexTables, getPhones } from "./services/phoneRequests";
 import { CompareProvider } from "./contexts/CompareContext";
+import EditForm from "./pages/EditForm";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +38,16 @@ const router = createBrowserRouter([
       {
         path: "/admin/add",
         element: <Add />,
+        loader: getAnnexTables,
+      },
+      {
+        path: "/admin/edit",
+        element: <Edit />,
+        loader: getPhones,
+      },
+      {
+        path: "/admin/edit/:id",
+        element: <EditForm />,
         loader: getAnnexTables,
       },
     ],

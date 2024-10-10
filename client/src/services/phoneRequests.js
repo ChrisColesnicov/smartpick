@@ -25,6 +25,18 @@ export async function getPhonesById(ids) {
   }
 }
 
+export async function getPhoneById(id) {
+  try {
+    const response = await myAxios.get(
+      `${import.meta.env.VITE_API_URL}/api/phones/${id}`
+    );
+    return response.data;
+  } catch (error) {
+    console.error(error);
+    return [];
+  }
+}
+
 export async function getAnnexTables() {
   const tables = [
     "connect",

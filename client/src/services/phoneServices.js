@@ -1,9 +1,21 @@
 import myAxios from "./myAxios";
 
-export default async function addPhone(phone) {
+export async function addPhone(phone) {
   try {
     const response = await myAxios.post("/api/phones", phone);
     if (response.status === 201) {
+      return response.data;
+    }
+  } catch (error) {
+    console.error(error);
+  }
+  return null;
+}
+
+export async function editPhone(phone) {
+  try {
+    const response = await myAxios.put("/api/phones", phone);
+    if (response.status === 200) {
       return response.data;
     }
   } catch (error) {
