@@ -25,7 +25,7 @@ export default function Compare() {
 
   return (
     <div>
-      <h1>Phones comparison</h1>
+      <h1 className="compare-title">Compare</h1>
       <section className="phone-details-container">
         <div className="phone-details">
           <h3 className="details-title">Topics</h3>

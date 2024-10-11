@@ -23,9 +23,12 @@
   --main-font-size: 16px;
   --reduced-font-size: 14px;
   --bigger-font-size: 20px;
+  background-image: url("../assets/images/wave.png");
+  background-size: 100% 400px;
+  background-repeat: no-repeat;
 }
 
 .main-title {
   color: var(--dark-font);
-  margin: 1rem;
+  margin: 1rem 4rem;
 }

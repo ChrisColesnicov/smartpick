@@ -5,6 +5,7 @@ import "./styles/Phones.css";
 import "./styles/Compare.css";
 import "./styles/Add.css";
 import "./styles/Nav.css";
+import "./styles/Home.css";
 import Nav from "./components/Nav";
 
 function App() {
