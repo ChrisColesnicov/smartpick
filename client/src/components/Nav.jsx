@@ -25,7 +25,7 @@ export default function Nav() {
       <img src={Logo} alt="Smartpick" className="logo" />
       <div className="user-account-nav">
         <img src={Account} alt="Account management" className="account-menu" />
-        <Link to="/user">My account</Link>
+        <Link to="/admin">Admin</Link>
       </div>
     </nav>
   );

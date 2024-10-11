@@ -31,7 +31,7 @@ export default function Phones() {
 
   return (
     <div>
-      <h1 className="main-title">Phones page</h1>
+      <h1 className="main-title">Browse all phones</h1>
       <div className="phone-list">
         <aside className="compared-phones-list">
           <button type="button" onClick={handleCompareButton}>

@@ -1,0 +1,28 @@
+header {
+  margin: 2rem;
+}
+
+.home-carousel {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.carousel-img {
+  border-radius: 16px;
+}
+
+@media screen and (width >= 1024px) {
+  .home-carousel {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .compare-card.featured {
+    margin: 2rem auto;
+    box-shadow: none;
+    width: 20vw;
+  }
+
+  .featured-carousel {
+    margin: 0 4rem;
+  }
+}
