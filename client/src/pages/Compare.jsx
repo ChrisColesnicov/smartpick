@@ -53,7 +53,6 @@ export default function Compare() {
           </div>
           <div className="field-name">
             <p>Release year :</p>
-            <p>Price at release :</p>
           </div>
           {phones.map((phone) => (
             <div key={phone.phone_id} className="phone-details-box">
