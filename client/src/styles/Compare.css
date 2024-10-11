@@ -54,4 +54,35 @@
 .compare-title {
   text-align: center;
   margin: 1rem;
+  color: var(--dark-font);
+}
+
+.field-name-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55%;
+  background-color: var(--main-green);
+  border-radius: 8px;
+}
+
+.field-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  width: 60%;
+  background-color: var(--main-green);
+  padding-right: 1rem;
+  border-radius: 8px;
+}
+
+.field-name > p {
+  color: var(--dark-font);
+}
+
+.field-name-title > p {
+  color: var(--dark-font);
+  font-size: var(--bigger-font-size);
+  font-weight: 600;
 }
