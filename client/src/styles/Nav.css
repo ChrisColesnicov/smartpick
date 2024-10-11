@@ -1,0 +1,188 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: var(--light-green);
+}
+
+.menu-burger {
+  border: none;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 0 0.5rem 1rem;
+  gap: 8px;
+}
+
+.menu-burger > .nav-links-burger {
+  display: none;
+  font-size: var(--bigger-font-size);
+}
+.menu-burger > .nav-links-burger > a {
+  color: var(--main-white);
+}
+
+.nav-links-burger.open {
+  display: flex;
+  position: absolute;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 2rem 1rem;
+  padding: 1rem;
+  gap: 1rem;
+  border-radius: 8px;
+  background-color: var(--main-orange);
+}
+
+.burger-component-1 {
+  height: 10px;
+  width: 3rem;
+  background-color: var(--main-orange);
+  border-radius: 16px;
+}
+
+.burger-component-2 {
+  height: 10px;
+  width: 1.5rem;
+  background-color: var(--main-orange);
+  border-radius: 16px;
+}
+
+.account-menu {
+  margin: 1rem;
+}
+
+.logo {
+  height: 1.5rem;
+  margin: 0 auto;
+}
+
+.nav-links {
+  display: none;
+}
+
+.user-account-nav > a {
+  display: none;
+}
+
+@media screen and (width >= 1024px) {
+  .logo {
+    height: 1.5rem;
+    position: absolute;
+    left: 45%;
+  }
+  .menu-burger {
+    display: none;
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0 1rem 1rem;
+    gap: 1rem;
+  }
+  .nav-links > a {
+    color: var(--dark-font);
+    font-weight: 600;
+    font-size: var(--bigger-font-size);
+    cursor: pointer;
+    height: 100%;
+    position: relative;
+    text-transform: uppercase;
+    transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    text-align: center;
+    padding: 0.25rem 0.5rem;
+  }
+  .nav-links > a:after,
+  .nav-links > a:before {
+    content: "";
+    position: absolute;
+    display: block;
+    border: 0px solid transparent;
+    width: 0%;
+    height: 0%;
+    transition: all 0.3s ease;
+  }
+
+  .nav-links > a:after {
+    width: 0%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    border-top: 4px solid transparent;
+    border-left: 4px solid transparent;
+  }
+
+  .nav-links > a:before {
+    width: 0%;
+    height: 0%;
+    right: 0;
+    bottom: 0;
+    border-bottom: 4px solid transparent;
+    border-right: 4px solid transparent;
+  }
+
+  .nav-links > a:hover::before,
+  .nav-links > a:hover::after {
+    width: 10px;
+    height: 10px;
+    border-color: var(--main-orange);
+    border-radius: 2px;
+  }
+  .user-account-nav {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .user-account-nav > a {
+    display: block;
+    color: var(--dark-font);
+    font-weight: 600;
+    font-size: var(--bigger-font-size);
+    cursor: pointer;
+    height: 100%;
+    position: relative;
+    text-transform: uppercase;
+    transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    text-align: center;
+    padding: 0.25rem 0.5rem;
+  }
+  .user-account-nav > a:after,
+  .user-account-nav > a:before {
+    content: "";
+    position: absolute;
+    display: block;
+    border: 0px solid transparent;
+    width: 0%;
+    height: 0%;
+    transition: all 0.3s ease;
+  }
+
+  .user-account-nav > a:after {
+    width: 0%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    border-top: 4px solid transparent;
+    border-left: 4px solid transparent;
+  }
+
+  .user-account-nav > a:before {
+    width: 0%;
+    height: 0%;
+    right: 0;
+    bottom: 0;
+    border-bottom: 4px solid transparent;
+    border-right: 4px solid transparent;
+  }
+  .user-account-nav > a:hover::before,
+  .user-account-nav > a:hover::after {
+    width: 10px;
+    height: 10px;
+    border-color: var(--main-orange);
+    border-radius: 2px;
+  }
+}
