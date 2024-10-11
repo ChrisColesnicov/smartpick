@@ -32,3 +32,9 @@
   color: var(--dark-font);
   margin: 1rem 4rem;
 }
+
+.secondary-title {
+  color: var(--dark-font);
+  margin: 2rem 0 0 0;
+  text-align: center;
+}
