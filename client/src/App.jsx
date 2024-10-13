@@ -6,6 +6,7 @@ import "./styles/Compare.css";
 import "./styles/Add.css";
 import "./styles/Nav.css";
 import "./styles/Home.css";
+import "./styles/Admin.css";
 import Nav from "./components/Nav";
 
 function App() {
