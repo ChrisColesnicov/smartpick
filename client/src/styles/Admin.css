@@ -1,0 +1,25 @@
+.admin-nav {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 1rem;
+  margin: 1rem 1rem 1rem 4rem;
+}
+
+.admin-nav > a {
+  border: none;
+  border-radius: 16px;
+  padding: 1rem 2rem;
+  transition: all 0.2s ease-in-out;
+  box-shadow: var(--shadow-color) 0px 5px 10px;
+  font-size: var(--main-font-size);
+  font-weight: 500;
+  background-color: var(--main-white);
+  opacity: 80%;
+}
+
+.admin-nav > a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 8px 4px var(--shadow-color);
+  cursor: pointer;
+}
