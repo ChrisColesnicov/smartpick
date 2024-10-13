@@ -39,8 +39,11 @@ export default function Compare() {
       <section className="phone-details-container">
         <div className="phone-details">
           <div className="details-title-container">
-            <h3 className="details-title">Topics</h3>
-            <img src={Settings} alt="Topics" />
+            <h3 className="details-title">Phones</h3>
+            <img src={Settings} alt="Phone details" />
+          </div>
+          <div className="field-name-title">
+            <p>Caracteristics</p>
           </div>
           {phones.map((phone) => (
             <CompareCard key={phone.phone_id} phone={phone} />
@@ -53,6 +56,7 @@ export default function Compare() {
           </div>
           <div className="field-name">
             <p>Release year :</p>
+            <p>Price at realease :</p>
           </div>
           {phones.map((phone) => (
             <div key={phone.phone_id} className="phone-details-box">
@@ -65,6 +69,15 @@ export default function Compare() {
           <div className="details-title-container">
             <h3 className="details-title">Display</h3>
             <img src={Screen} alt="Display" />
+          </div>
+          <div className="field-name">
+            <p>Screen size :</p>
+            <p>Screen type :</p>
+            <p>Screen protection :</p>
+            <p>Brightness :</p>
+            <p>Brightness :</p>
+            <p>Variable refresh rate :</p>
+            <p>Refresh rate :</p>
           </div>
           {phones.map((phone) => (
             <div key={phone.phone_id} className="phone-details-box">
@@ -87,6 +100,10 @@ export default function Compare() {
             <h3 className="details-title">Processor</h3>
             <img src={Chip} alt="Processor" />
           </div>
+          <div className="field-name">
+            <p>Chip model :</p>
+            <p>RAM :</p>
+          </div>
           {phones.map((phone) => (
             <div key={phone.phone_id} className="phone-details-box">
               <p>{phone.chip}</p>
@@ -98,6 +115,11 @@ export default function Compare() {
           <div className="details-title-container">
             <h3 className="details-title">Battery</h3>
             <img src={Battery} alt="Battery" />
+          </div>
+          <div className="field-name">
+            <p>Battery size :</p>
+            <p>Max charge rate :</p>
+            <p>Wireless charging :</p>
           </div>
           {phones.map((phone) => (
             <div key={phone.phone_id} className="phone-details-box">
@@ -111,6 +133,16 @@ export default function Compare() {
           <div className="details-title-container">
             <h3 className="details-title">Camera</h3>
             <img src={Camera} alt="Camera" />
+          </div>
+          <div className="field-name">
+            <p>Camera number (back) :</p>
+            <p>Mpx (wide angle) :</p>
+            <p>Focus (wide angle) :</p>
+            <p>Mpx (ultrawide angle) :</p>
+            <p>Focus (ultrawide angle) :</p>
+            <p>Mpx (other) :</p>
+            <p>Focus (other) :</p>
+            <p>Video settings (max) :</p>
           </div>
           {phones.map((phone) => (
             <div key={phone.phone_id} className="phone-details-box">
@@ -138,7 +170,14 @@ export default function Compare() {
           <div className="details-title-container">
             <h3 className="details-title">Hardware</h3>
             <img src={Hardware} alt="Hardware" />
-          </div>{" "}
+          </div>
+          <div className="field-name">
+            <p>Phone material (main) :</p>
+            <p>Height :</p>
+            <p>Width :</p>
+            <p>Thickness :</p>
+            <p>Weight :</p>
+          </div>
           {phones.map((phone) => (
             <div key={phone.phone_id} className="phone-details-box">
               <p>{phone.phone_material}</p>
@@ -154,6 +193,11 @@ export default function Compare() {
             <h3 className="details-title">Connectivity</h3>
             <img src={Wifi} alt="Connectivity" />
           </div>
+          <div className="field-name">
+            <p>Network (max) :</p>
+            <p>Bluetooth version :</p>
+            <p>Wifi version :</p>
+          </div>
           {phones.map((phone) => (
             <div key={phone.phone_id} className="phone-details-box">
               <p>{phone.connectivity_version}</p>
@@ -166,6 +210,11 @@ export default function Compare() {
           <div className="details-title-container">
             <h3 className="details-title">System & storage</h3>
             <img src={Memory} alt="system & storage" />
+          </div>
+          <div className="field-name">
+            <p>System software :</p>
+            <p>Base storage :</p>
+            <p>Memory card slot :</p>
           </div>
           {phones.map((phone) => (
             <div key={phone.phone_id} className="phone-details-box">
