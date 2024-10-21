@@ -7,6 +7,7 @@ const BluetoothRepository = require("./models/BluetoothRepository");
 const CoverRepository = require("./models/CoverRepository");
 const ConnectivityRepository = require("./models/ConnectivityRepository");
 const ScreenRepository = require("./models/ScreenRepository");
+const UserRepository = require("./models/UserRepository");
 
 // Create an empty object to hold data repositories for different tables
 const tables = {};
@@ -24,6 +25,7 @@ tables.bluetooth = new BluetoothRepository();
 tables.cover = new CoverRepository();
 tables.connectivity = new ConnectivityRepository();
 tables.screen = new ScreenRepository();
+tables.user = new UserRepository();
 
 /* ************************************************************************* */
 
