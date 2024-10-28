@@ -13,6 +13,7 @@ import Edit from "./pages/Edit";
 import { getAnnexTables, getPhones } from "./services/phoneRequests";
 import { CompareProvider } from "./contexts/CompareContext";
 import EditForm from "./pages/EditForm";
+import Login from "./pages/Login";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home />,
         loader: getPhones,
+      },
+      {
+        path: "/connect",
+        element: <Login />,
       },
       {
         path: "/phones",
